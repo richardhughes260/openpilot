@@ -188,7 +188,6 @@ managed_processes = {
   "updated": "selfdrive.updated",
   "dmonitoringmodeld": ("selfdrive/modeld", ["./dmonitoringmodeld"]),
   "modeld": ("selfdrive/modeld", ["./modeld"]),
-  "rtshield": "selfdrive.rtshield",
 }
 
 daemon_processes = {
@@ -262,7 +261,6 @@ if not PC:
 if ANDROID:
   car_started_processes += [
     'gpsd',
-    'rtshield',
   ]
 
 # starting dmonitoringmodeld when modeld is initializing can sometimes \
